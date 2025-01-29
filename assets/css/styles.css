@@ -1,6 +1,7 @@
+/* ==== GENERAL ==== */
 @font-face {
     font-family: Geist Mono;
-    src: url(./assets/fonts/GeistMono-VariableFont_wght.ttf);
+    src: url(../fonts/GeistMono-VariableFont_wght.ttf);
 }
 
 :root {
@@ -27,18 +28,21 @@ body {
     text-align: center;
 }
 
+button {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+button, #guess-word-field {
+    font-family: var(--font);
+}
+
+/* ==== KEYBOARD ==== */
 #keyboard {
     width: 50vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 7px;
-}
-
-#guess-word-field {
-    font-size: 2.5rem;
-    text-align: center;
-    letter-spacing: 1.5rem;
 }
 
 #keyboard button {
@@ -58,14 +62,14 @@ body {
     background-color: #95d303;
 }
 
-button {
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-button, #guess-word-field {
-    font-family: var(--font);
+/* ==== GUESS WORD FIELD ==== */
+#guess-word-field {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 1.5rem;
 }
 
+/* ==== NEW WORD BUTTON */
 #new-word-btn {
     padding: .5rem 2rem;
     background-color: transparent;

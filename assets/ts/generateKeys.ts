@@ -1,3 +1,5 @@
+import { playHangman } from "./app";
+
 export const generatedKeys = () : HTMLButtonElement[] => {
     const keyboard = document.querySelector("#keyboard");
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -8,7 +10,11 @@ export const generatedKeys = () : HTMLButtonElement[] => {
         const key = document.createElement("button");
         key.textContent = letter;
         key.setAttribute("value", letter);
-        keys.push(key)
+        key.addEventListener("click", () => {
+            playHangman(key);
+        })
+
+        keys.push(key);
 
         if(keyboard) {
             keyboard.appendChild(key);
