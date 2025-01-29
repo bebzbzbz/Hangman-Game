@@ -1,1 +1,1 @@
-<img src="./Level_Hangman/assets/img/hangman.png"></img>
+<img src="./assets/img/hangman.png"></img>
