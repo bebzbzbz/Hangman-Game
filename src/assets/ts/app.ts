@@ -68,7 +68,7 @@ export function playHangman(key : HTMLButtonElement) : void {
 
             // IF WORD IS FULLY GUESSED
             if(!hiddenWordArray.includes("●")) {
-                window.alert("Du hast gewonnen, glückwunsch!");
+                window.alert("You won! Congracts");
                 keys.forEach((key) => key.disabled = true);
             }
         }
@@ -79,7 +79,7 @@ export function playHangman(key : HTMLButtonElement) : void {
 
         // IF ALL CHANCES ARE USED UP
         if(currentCounter === chances) {
-            window.alert("Du hast verloren. Versuch es nochmal!")
+            window.alert("You lost! Try again")
             keys.forEach((key) => key.disabled = true)
         }
     }
